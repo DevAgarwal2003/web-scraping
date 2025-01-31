@@ -54,7 +54,7 @@ def scrape_emt(source, destination, travel_date):
         chrome_options.add_argument(option)
         
     # Set up ChromeDriver
-    service = Service('D:/SeleniumDrivers/chromedriver.exe')
+    service = Service(ChromeDriverManager().install())
 
     # Create the WebDriver instance with the Service
     driver = webdriver.Chrome(options = chrome_options, service=service)
