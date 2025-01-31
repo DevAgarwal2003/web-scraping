@@ -57,9 +57,10 @@ def scrape_mmt(source, destination, travel_date):
     chrome_options = Options()
 
     # Set up ChromeDriver
-    service = Service(ChromeDriverManager().install())
+    service = Service('chromedriver.exe')
 
     options = [
+        "--headless",
         "--disable-gpu",
         "--window-size=1920,1200",
         "--ignore-certificate-errors",
