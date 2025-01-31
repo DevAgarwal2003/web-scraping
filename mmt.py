@@ -10,6 +10,7 @@ from selenium.webdriver.chrome.options import Options
 import requests
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support import expected_conditions as EC
 
 def build_url(source, destination, date, adults=1, children=0, infants=0, trip_type="O", cabin_class="E", lang="eng"):
