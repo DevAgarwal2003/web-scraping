@@ -56,7 +56,7 @@ def scrape_mmt(source, destination, travel_date):
     chrome_options = Options()
 
     # Set up ChromeDriver
-    service = Service('D:/SeleniumDrivers/chromedriver.exe')
+    service = Service(ChromeDriverManager().install())
 
     options = [
         "--disable-gpu",
